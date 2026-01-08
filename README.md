@@ -21,7 +21,7 @@ Let's start our first PGX program. Before you do this, install PGX (info in the 
 
 First, type this:
 ```
-import PGX  # We initalise PGX so we can use it
+import PGX  # We initalize PGX so we can use it
 
 win = PGX.Window(800, 600) # Create a window that's 800 pixels wide and 600 pixels high
 
