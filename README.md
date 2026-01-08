@@ -38,7 +38,7 @@ More of PGX's feutures are:
 
 
 # More to explore
-You can see more PGX functions in [PGX Wiki](https://github.com/ACoder735/PGX/wiki)
+You can see more PGX functions in the [PGX Wiki](https://github.com/ACoder735/PGX/wiki)
 
 
 
