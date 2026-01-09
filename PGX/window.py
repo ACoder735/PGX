@@ -36,6 +36,9 @@ class Window:
 
     def end(self):
         """ Stops the game loop and closes the window. """
+        # Do the functions binded by PGX.Event.onquit(), then close the window.
+        for func in Event._quit_handlers:
+            func() 
         self.running = False
 
     def center(self):
@@ -110,6 +113,9 @@ class Window:
             for event in pygame.event.get():
                 # --- QUIT (Default PGX Behavior) ---
                 if event.type == pygame.QUIT:
+                    # Do the functions binded by PGX.Event.onquit(), then close the window.
+                    for func in Event._quit_handlers:
+                        func() 
                     self.running = False
                 # --- KEYBOARD EVENTS ---
                 if event.type == pygame.KEYDOWN:
