@@ -5,7 +5,8 @@ import PGX.Events.joy as joy
 _down_handlers = []
 _up_handlers = []
 _mouse_down_handlers = []
-_mouse_up_handlers = [] 
+_mouse_up_handlers = []
+_quit_handlers = [] 
 
 def onkey(key, function):
     """
@@ -34,13 +35,17 @@ def is_pressed(key):
 def onmousedown(button, function):
     """ 
     Binds a function to run when a specific mouse button is clicked.
-    Button IDs: Use mouseleft, mouseright, mousemid, mouseScrollUp and mouseScrollDown
+    Button IDs: Use mouseleft, mouseright, and mousemid.
     """
     _mouse_down_handlers.append((button, function))
 
 def onmouseup(button, function):
     """ Binds a function to run when a mouse button is released. """
     _mouse_up_handlers.append((button, function))
+
+def onquit(function):
+    """ Binds a function to run when the window closes. """
+    _quit_handlers.append(function)
 
 mouseleft = 1
 mousemid = 2
@@ -53,7 +58,8 @@ def ismousevisible():
     pygame.mouse.get_visible()
 
 
-__all__ = ['onkey', 'onrelease', 'key', 'is_pressed', 'onmousedown', 'onmouseup', 'mouseleft', 'mouseright', 'mousemid', 'mousex', 'mousey', 'joy']
+__all__ = ['onkey', 'onrelease', 'key', 'is_pressed', 'onmousedown', 'onmouseup', 'mouseleft', 'mouseright', 'mousemid', 'mousex', 'mousey', 'joy', 'onquit',
+           'ismousevisible']
 
 
 
