@@ -1,6 +1,6 @@
 # PGX v1.0.0 README file
 
-<img width="1024" height="1024" alt="Icon" src="https://github.com/user-attachments/assets/c2a19c6e-9aa9-4920-ac48-afe75ac05f78" />
+<img width="256" height="256" alt="Icon" src="https://github.com/user-attachments/assets/c2a19c6e-9aa9-4920-ac48-afe75ac05f78" />
 
 # Intro
 This is PGX, a simple libary built on top of `pygame`. It is designed for beginners to start making Python-based games easily.
