@@ -27,6 +27,8 @@ win = PGX.Window(800, 600) # Create a window that's 800 pixels wide and 600 pixe
 
 win.run() # The most important function; it runs the window and game
 ```
+This code makes a blank window.
+
 See? It's simple! Instead of having to do pygame's game loop, you just type `win.run()` and PGX handles everything for you.
 
 More of PGX's feutures are:
@@ -38,7 +40,7 @@ More of PGX's feutures are:
 
 
 # More to explore
-You can see more PGX functions in the [PGX Wiki](https://github.com/ACoder735/PGX/wiki)
+You can see more PGX functions in the [PGX Tutorials](https://github.com/ACoder735/PGX/wiki)
 
 
 
