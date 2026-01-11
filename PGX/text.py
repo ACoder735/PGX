@@ -14,7 +14,7 @@ class Text:
             self.font = pygame.font.SysFont(self.font_name, self.size)
         except:
             self.font = pygame.font.SysFont(None, self.size)
-            print('[PGX Error] Font '+self.font+' was not found.')
+            print('[PGX Error] Font '+str(self.font)+' was not found.')
 
         self._render()
 
@@ -56,6 +56,7 @@ class Text:
             self.font = pygame.font.SysFont(self.font_name, self.size)
         except:
             self.font = pygame.font.SysFont(None, self.size)
-            print('[PGX Error] Font '+self.font+' was not found.')
+            print('[PGX Error] Font '+str(self.font)+' was not found.')
         self._render()
+
 
