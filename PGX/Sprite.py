@@ -40,6 +40,14 @@ class Sprite:
         rect = self.image.get_rect(center=(self.x, self.y))
         surface.blit(self.image, rect)
 
+    def flip_h(self):
+        """ Flips the sprite Horizontally (Left <-> Right). """
+        self.image = pygame.transform.flip(self.image, True, False)
+
+    def flip_v(self):
+        """ Flips the sprite Vertically (Upside Down). """
+        self.image = pygame.transform.flip(self.image, False, True)
+
 
 class Group:
     """
