@@ -5,7 +5,7 @@ import PGX.Events as Event
 import os
 
 class Window:
-    """ A PGX window for creating games. size must be a tuple (e.g. (800, 600)"""
+    """ A PGX window for creating games."""
     def __init__(self, width, height, fullscr=False):
         self.running = True
         self.event_queue = {}
@@ -151,6 +151,7 @@ class Window:
             self.clock.tick(60)
 
         pygame.quit()
+
 
 
 
